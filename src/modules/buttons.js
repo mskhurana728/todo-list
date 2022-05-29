@@ -1,3 +1,4 @@
+import { addNewProject,displayProject } from "./project";
 const addTaskBtn= document.querySelector(".addTaskBtn");
 const form= document.querySelector(".form");
 const submitTaskBtn = document.querySelector(".submitBtn");
@@ -5,7 +6,6 @@ const addProjectBtn= document.querySelector(".addProjectBtn");
 const submitProjectBtn= document.querySelector(".submitProjectBtn");
 const cancelProjectBtn= document.querySelector(".cancelProjectBtn");
 const projectForm= document.querySelector(".projectForm");
-
 
 function addTask(){
     console.log(addTaskBtn);
@@ -36,10 +36,17 @@ function addProject(){
 }
 function submitProject(){
     submitProjectBtn.addEventListener("click",(e)=>{
+
+        let projectName = document.querySelector("#projectName").value;
+        console.log(projectName);
+        addNewProject(projectName);
+        displayProject();
+
+
         projectForm.style.display="none";
         addProjectBtn.style.display="inline";
-        projectForm.reset();
         e.preventDefault();
+        projectForm.reset();
     })
 }
 function cancelProject(){
@@ -50,6 +57,7 @@ function cancelProject(){
         e.preventDefault();
     })
 }
+
 
 
 export {addTask,submitTask,addProject,submitProject,cancelProject};
