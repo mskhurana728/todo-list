@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="header">
+            <h3 class="heading">TO-DO LIST</h3>
+        </div>
+        <div class="sideBar">
+            <!-- <ul class="sBar">
+                <li class="link link1">index</li>
+                <li class="link link2">today</li>
+                <li class="link link3">This Week</li>
+            </ul> -->
+            <div class="projectArea">
+                <h4>Projects</h4>
+                <div class="projects">
+
+                </div>
+            </div>
+            <ul class="sBar">
+                <li class="link link4"><button class="addProjectBtn">+ Add Project</button></li>
+                <form action="" class="projectForm">
+                    <div>
+                        <label for="projectName">Project Name</label>
+                        <input id="projectName" type="text">
+                    </div>
+                    <div class="projectBtns">
+                        <button class="submitProjectBtn">Add</button>
+                        <button class="cancelProjectBtn">Cancel</button>
+                    </div>
+
+                </form>
+            </ul>
+        </div>
+        <div class="listArea">
+            <div class="taskArea">
+            SELECT A PROJECT
+            <br>
+            IF THERE IS NO PROJECT PLEASE CREATE ONE.
+
+            </div>
+            <button class="addTaskBtn">+ ADD TASK</button>
+            <form action="" class="form">
+                <div>
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                </div>
+
+                <div>
+                    <label for="description">Description</label>
+                    <input type="text" id="description">
+                </div>
+
+                <div>
+                    <label for="dueDate">Due Date</label>
+                    <input type="date" id="dueDate">
+                </div>
+
+                <button class="submitBtn" type="submit">Submit</button>
+
+            </form>
+        </div>
+        <div class="footer">Copyright By Manpreet</div>
+    </div>
+
+</body>
+
+</html>
