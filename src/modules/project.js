@@ -4,8 +4,16 @@ const projectsArea = document.querySelector(".projects");
 
 let projects = [];
 
+// function Project(name) {
+//     return { name };
+// }
+
 function addNewProject(name) {
+  // let newProject = Project(name);
+
   projects.push([name]);
+
+  console.log(projects);
 }
 
 function displayProject() {
@@ -53,8 +61,8 @@ function displayProject() {
       displayProjectTasks(id);
 
       addTaskBtn.style.display = "inline";
-      taskArea.textContent = "";
-     
+      // taskArea.textContent=""
+      // newProjectDiv.style.backgroundColor = "white";
     });
 
     removeBtn.addEventListener("click", () => {
